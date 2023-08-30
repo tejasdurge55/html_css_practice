@@ -1,0 +1,194 @@
+$color_1: #222222;
+$color_2: #1f7a54;
+$color_3: #666666;
+$color_4: #0000001f;
+$color_5: #616161;
+$font-family_1: "Quicksand", sans-serif;
+$background-color_1: black;
+$background-color_2: #eeeeee;
+$background-color_3: #3fd28b;
+$background-color_4: rgb(224, 225, 225);
+
+.bgimg {
+	background-image: url("/q_screen_assets/header pattern image.png");
+	background-size: cover;
+	background-position: center;
+	background-color: $background-color_1;
+	opacity: 1;
+}
+.form {
+	width: 488px;
+	height: 550px;
+	margin-top: 108px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: #3ac7ec solid 4px;
+	padding: 20px 32px 20px 32px;
+	background: #ffffff;
+	border-radius: 2px;
+}
+.with_quantum {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+body {
+	margin: 0px 0px;
+	background-color: $background-color_2;
+}
+.state {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	border-bottom: 1px groove;
+	align-items: center;
+}
+.last {
+	display: flex;
+	justify-content: end;
+}
+.btn1 {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: $background-color_3;
+	width: 216px;
+	height: 40px;
+	border-radius: 4px;
+	border: solid 0px #1f7a54;
+	opacity: 1;
+	background: #3fd28b 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 5px #0000003d;
+	opacity: 1;
+}
+.state2 {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+.p_quant {
+	font-family: $font-family_1;
+	font-size: 24px;
+	font-weight: bold;
+}
+.radio {
+	margin-top: 34px;
+	display: inline-flex;
+	margin-right: 32px;
+	justify-content: start;
+	align-items: center;
+}
+p {
+	line-height: 0px;
+}
+.quick_s_16 {
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 16px;
+	color: $color_1;
+}
+.quick_s_14 {
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 14px;
+	color: $color_2;
+}
+.quick_s_16_light {
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 16px;
+	color: $color_3;
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 16px;
+	color: $color_3;
+}
+.quick_s_12_light {
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 12px;
+	color: $color_3;
+}
+.state_marg {
+	margin-top: 23px;
+}
+.class_dist {
+	margin-top: 36px;
+}
+.usern {
+	margin-top: 56px;
+}
+.passw {
+	margin-top: 36px;
+}
+.rem {
+	margin-top: 24px;
+}
+.mid {
+	margin-top: 258px;
+	display: flex;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	justify-content: center;
+	color: $color_2;
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 14px;
+}
+.footer {
+	background-color: $background-color_4;
+	height: 40px;
+	margin-top: 16px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	justify-content: center;
+}
+.pipe {
+	color: $color_4;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.c1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.copy {
+	font-family: $font-family_1;
+	font-weight: normal;
+	font-size: 12px;
+	margin-left: 16px;
+	color: $color_5;
+}
+.pipe2 {
+	font-size: 20px;
+	margin-left: 16px;
+}
+.z {
+	font-family: $font-family_1;
+	font-weight: bold;
+	font-size: 12px;
+	margin-left: 8px;
+	color: $color_5;
+}
+.a {
+	font-family: $font-family_1;
+	font-weight: normal;
+	font-size: 12px;
+	margin-left: 11px;
+	color: $color_5;
+}
+.foot2 {
+	margin-top: 8px;
+	height: 24px;
+	padding-right: 16px;
+	border-right: #0000001f solid 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,308 @@
+$color_1: white;
+$color_2: green;
+$color_3: lightgrey;
+$font-family_1: "Quicksand", sans-serif;
+$font-family_2: Quicksand-medium;
+$font-family_3: Quicksand-light;
+$background-color_1: #333;
+$background-color_2: #444;
+$background-color_3: #8ddc97;
+$background-color_4: white;
+$background-color_5: rgba(128, 128, 128, 0.301);
+$background-color_6: #555;
+
+/* Define the styling for the navbar */
+/* Style for navbar items */
+/* Define the styling for the side menu */
+/* Style for menu items */
+/* .Course {
+  border-bottom: 2px solid black;
+} */
+/* Apply the stacking and gap on smaller screens using media queries */
+/* Apply the grid layout on larger screens */
+/* Move the side menu into the viewport */
+/* Apply navbar on larger screens using media queries */
+article {
+	display: grid;
+	grid-template-columns: 24px 1fr 24px;
+	background: #eeeeee 0% 0% no-repeat padding-box;
+	>* {
+		grid-column: 2;
+		min-width: 0;
+		min-height: 1080px;
+	}
+}
+.header {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	padding: 10px;
+	background-color: $background-color_1;
+	color: $color_1;
+	>div {
+		&:nth-child(2) {
+			margin-left: auto;
+		}
+	}
+}
+.navbar {
+	display: none;
+	justify-content: flex-end;
+	align-items: center;
+	a {
+		color: $color_1;
+		text-decoration: none;
+		margin-right: 20px;
+		transition: color 0.3s;
+		font: Quicksand-medium;
+	}
+}
+.side-menu {
+	display: flex;
+	flex-direction: column;
+	background-color: $background-color_2;
+	position: fixed;
+	top: 0;
+	left: -200px;
+	width: 200px;
+	height: 100vh;
+	overflow-y: auto;
+	transition: left 0.3s ease-in-out;
+	a {
+		color: $color_1;
+		text-decoration: none;
+		padding: 10px;
+		transition: background-color 0.3s;
+	}
+}
+body {
+	margin: 0;
+	background: #eeeeee 0% 0% no-repeat padding-box;
+	font-family: $font-family_1;
+}
+.content {
+	height: 100%;
+}
+.menu {
+	background-color: $background-color_3;
+	display: flex;
+	justify-content: space-around;
+	grid-column: 1/-1;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	font-family: $font-family_2;
+}
+.bord_bot {
+	border-bottom: 2px solid black;
+	margin-left: 0;
+	margin-right: 0;
+}
+.Course {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+.Classes {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+.filter {
+	display: flex;
+	grid-column: 1/-1;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid lightgray;
+	margin-bottom: 16px;
+}
+.Sort {
+	display: flex;
+	gap: 10px;
+}
+.filterdrop {
+	border: none;
+	border-bottom: 2px solid rgb(155, 152, 152);
+	background: transparent;
+	font-family: $font-family_1;
+	font-weight: bold;
+}
+.drop {
+	border: none;
+	border-bottom: 2px solid lightgray;
+	width: 100%;
+}
+.Courses {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 26px;
+}
+.Course-1 {
+	grid-column: 1/2;
+	background-color: $background-color_4;
+	padding: 20px;
+}
+.Course-1-content {
+	display: flex;
+	gap: 16px;
+}
+.Content-1 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	>div {
+		&:nth-child(2) {
+			font-family: $font-family_3;
+		}
+	}
+}
+.Course-1-footer {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	justify-content: space-evenly;
+	border-top: 1px solid lightgrey;
+	margin-top: 16px;
+	margin-bottom: 9px;
+	padding-top: 16px;
+}
+.information {
+	display: flex;
+	gap: 10px;
+}
+.Course-2-content {
+	display: flex;
+	gap: 10px;
+}
+.Course-2-footer {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	justify-content: space-evenly;
+	border-top: 1px solid lightgrey;
+	margin-top: 16px;
+	margin-bottom: 9px;
+	padding-top: 16px;
+}
+.Course-2 {
+	grid-column: 2/3;
+	background-color: $background-color_4;
+	padding: 20px;
+}
+.Course-3 {
+	grid-column: 1/2;
+	background-color: $background-color_4;
+	padding: 20px;
+}
+.Course-4 {
+	grid-column: 2/3;
+	background-color: $background-color_4;
+	padding: 20px;
+}
+.msg {
+	display: flex;
+	justify-content: center;
+	color: $color_2;
+	font-size: 18px;
+	margin-top: 22px;
+	margin-bottom: 20px;
+}
+p {
+	>span {
+		border-left: 1px solid rgba(157, 157, 157, 0.666);
+		height: 20px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+.footer {
+	background-color: $background-color_5;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: auto;
+	>span {
+		border-left: 1px solid rgba(82, 82, 82, 0.415);
+		height: 25px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	>p {
+		font-weight: 500;
+	}
+}
+.totalfooter {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.fav {
+	opacity: 0.2;
+	color: $color_3;
+}
+@media screen and (max-width: 768px) {
+	.Course-1 {
+		width: 100%;
+	}
+	.Course-2 {
+		width: 100%;
+	}
+	.Course-3 {
+		width: 100%;
+	}
+	.Course-4 {
+		width: 100%;
+	}
+	.header {
+		flex-direction: row;
+		align-items: flex-end;
+		>div {
+			&:nth-child(3) {
+				margin-left: auto;
+			}
+		}
+	}
+	.navbar {
+		display: none;
+	}
+	.side-menu {
+		display: flex;
+		a {
+			&:hover {
+				background-color: $background-color_6;
+			}
+		}
+	}
+	.side-menu.active {
+		left: 0;
+	}
+}
+@media screen and (min-width: 769px) {
+	.Courses {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 26px;
+		column-gap: 24px;
+	}
+	.header {
+		flex-direction: row;
+	}
+	.navbar {
+		display: flex;
+	}
+	.side-menu {
+		display: none;
+	}
+	.side-menu-toggle {
+		display: none;
+	}
+}
+@media only screen and (max-height: 950px) {
+	.totalfooter {
+		position: relative;
+	}
+}
