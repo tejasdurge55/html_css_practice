@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info and Posts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">User Info and Posts</h1>
+      <div class="input-container">
+        <input
+          class="input1"
+          type="text"
+          id="userInput"
+          placeholder="Enter a user ID"
+        />
+        <button class="button1" onclick="submitbtn()">Submit</button>
+      </div>
+      <div class="middle">
+        <div class="user-info">
+          <h2>User Info</h2>
+          <div class="info-content">
+            <pre class="info" id="userInfo">
+User info will be displayed here.</pre
+            >
+          </div>
+        </div>
+        <div class="user-posts">
+          <h2>User Posts</h2>
+          <div class="post-content">
+            <pre class="post" id="userPosts">
+User posts will be displayed here.</pre
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
