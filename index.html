@@ -11,11 +11,12 @@
       }
 
       body {
+        text-align: center;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
         margin: 0;
         padding: 1rem;
-        background-color: bisque;
+        background-color: #f3f3f3;
       }
       h1 {
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -27,8 +28,9 @@
           "Lucida Sans", Arial, sans-serif;
       }
       .wrapper {
-        max-width: 800px;
-        padding: 30px;
+        max-width: 900px;
+        min-width: 900px;
+        padding: 20px;
         margin: 0 auto;
         border-radius: 15px;
         background-color: white;
@@ -44,14 +46,31 @@
       }
 
       li {
+        content: "";
+        display: block;
+        padding-top: 86.6%;
+        background: currentColor;
+        clip-path: polygon(
+          10% 0%,
+          90% 0%,
+          100% 50%,
+          90% 100%,
+          10% 100%,
+          0% 50%
+        );
         display: flex;
         align-items: center;
         gap: 1rem;
         background: aliceblue;
         padding: 1rem;
+        padding-left: 40px;
+        padding-right: 40px;
         border-radius: 1rem;
-        width: 100%;
-        box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+        min-width: 100px;
+        width: 90%;
+        box-shadow: 0rem 0rem 2.5rem inset rgb(0 0 0 / 0.1);
+
+        /* box-shadow: 10px 10px 5px lightblue inset; */
       }
 
       li::before {
@@ -59,15 +78,16 @@
         content: counter(list-item);
         font-size: 3rem;
         font-weight: 700;
-        width: 2em;
-        height: 2em;
-        background: black;
+        width: 1.5em;
+        height: 1.5em;
+        background: rgb(123, 117, 201);
         flex: 0 0 auto;
         border-radius: 50%;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0rem 0rem 2.5rem rgb(0 0 0 / 0.1);
       }
 
       li:nth-child(even) {
@@ -76,10 +96,35 @@
         margin-left: 2rem;
       }
       a {
+        content: "";
+        display: block;
+        padding-top: 86.6%;
+        background: currentColor;
+        clip-path: polygon(
+          15% 0%,
+          105% 0%,
+          100% 50%,
+          105% 100%,
+          15% 100%,
+          0% 50%
+        );
+
         font-size: 20px;
+        min-width: 150px;
+        min-height: 50px;
         font-weight: 100;
+        padding: 10px 12px 10px 20px;
         text-decoration: none;
+        text-align: center;
+        text-justify: inherit;
         color: purple;
+        border-radius: 5px;
+        background-color: white;
+
+        box-shadow: 0.5rem 0.5rem 0.5rem rgb(0 0 0 / 0.1);
+      }
+      ol > li:before {
+        content: attr(seq) "";
       }
     </style>
     <base target="_blank" />
@@ -89,7 +134,7 @@
       <h1>HTML_CSS</h1>
 
       <ol role="list">
-        <li>
+        <li seq="01">
           <a href="/html_css_practice/task1_22aug23/index.html"
             >[Task 1 - Twitter Card]</a
           ><a
@@ -97,19 +142,15 @@
             >[Source Code]</a
           >
         </li>
-        <li>
-          <ul>
-            <li>
-              <a href="/html_css_practice/task2_23aug23/index.html"
-                >[Task 2.1 - HTML]</a
-              ><a
-                href="https://github.com/tejasdurge55/html_css_practice/tree/master/task2_23aug23"
-                >[Source Code]</a
-              >
-            </li>
-          </ul>
+        <li seq="02">
+          <a href="/html_css_practice/task2_23aug23/index.html"
+            >[Task 2.1 - HTML]</a
+          ><a
+            href="https://github.com/tejasdurge55/html_css_practice/tree/master/task2_23aug23"
+            >[Source Code]</a
+          >
         </li>
-        <li>
+        <li seq="03">
           <a href="/html_css_practice/task3_css_grid_25aug23/index.html"
             >[Task 3 - CSS Grid]</a
           ><a
@@ -117,9 +158,9 @@
             >[Source Code]</a
           >
         </li>
-        <li>
+        <li seq="04">
           <ul>
-            <li>
+            <li class="sub-list">
               <a href="/html_css_practice/task4a_login_28aug/index.html"
                 >[Task 4.1 - Quantum Login]</a
               ><a
@@ -137,7 +178,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li seq="05">
           <ul>
             <li>
               <a
@@ -159,34 +200,40 @@
             </li>
           </ul>
         </li>
-        <li>
+
+        <li seq="06">
+          <a href="/html_css_practice/task_6_notification_hover/login2.html"
+            >[Quantum Login (SCSS)]</a
+          ><a
+            href="https://github.com/tejasdurge55/html_css_practice/tree/master/task_6_notification_hover"
+            >[Source Code]</a
+          >
+        </li>
+
+        <li seq="*">
+          <a href="/html_css_practice/to_do_app_list/index.html">[To Do App]</a
+          ><a
+            href="https://github.com/tejasdurge55/html_css_practice/tree/master/to_do_app_list"
+            >[Source Code]</a
+          >
+        </li>
+
+        <li seq="07">
           <ul>
             <li>
-              <a href="/html_css_practice/task_6_notification_hover/login2.html"
-                >[Quantum Login (SCSS)]</a
+              <a href="/html_css_practice/task_7_1_event_handling/index.html"
+                >[Event Handling]</a
               ><a
-                href="https://github.com/tejasdurge55/html_css_practice/tree/master/task_6_notification_hover"
+                href="https://github.com/tejasdurge55/html_css_practice/tree/master/task_7_1_event_handling"
                 >[Source Code]</a
               >
             </li>
             <li>
-              <a href="/Task6/dashboard.html">[Dashboard (JS)]</a
+              <a
+                href="/html_css_practice/task_7_2_asynchronus_javascript/dashboard.html"
+                >[Asynchronus Javascript]</a
               ><a
-                href="https://github.com/DiltonOnGithub/DiltonOnGithub.github.io/tree/main/Task6"
-                >[Source Code]</a
-              >
-            </li>
-            <li>
-              <a href="/Task6/data.json">[JSON DATA]</a
-              ><a
-                href="https://github.com/DiltonOnGithub/DiltonOnGithub.github.io/tree/main/Task6"
-                >[Source Code]</a
-              >
-            </li>
-            <li>
-              <a href="/Task6/dashboardJS.html">[Dashboard (JSON)]</a
-              ><a
-                href="https://github.com/DiltonOnGithub/DiltonOnGithub.github.io/tree/main/Task6"
+                href="https://github.com/tejasdurge55/html_css_practice/tree/master/task_7_2_asynchronus_javascript"
                 >[Source Code]</a
               >
             </li>
